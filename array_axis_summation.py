@@ -19,9 +19,9 @@ def array_axis_summation(array):
 
     # Calculate row sums and column sums
     row_sums = sum_rows(array)
-    %time
+    %time                                #this function will calculate and print the consumed time
     column_sums = sum_columns(array)
-    %time
+    %time                                #this function will calculate and print the consumed time
 
     print("Original List:")
     for row in array:
