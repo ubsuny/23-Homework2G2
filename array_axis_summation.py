@@ -19,7 +19,9 @@ def array_axis_summation(array):
 
     # Calculate row sums and column sums
     row_sums = sum_rows(array)
+    %time
     column_sums = sum_columns(array)
+    %time
 
     print("Original List:")
     for row in array:
