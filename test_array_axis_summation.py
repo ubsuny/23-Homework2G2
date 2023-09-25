@@ -34,9 +34,10 @@ def array_axis_summation(array):
 if __name__ == "__main__":
     # This code block will only execute when the script is run directly,
     # not when it's imported as a module into another script.
-    user_array = [[-1, 50, 30],
-                  [8, 5, 6],
-                  [7, 8, 9]]
+    user_array = [[-1, 50, 30,45],
+                  [8, 5, 6,34],
+                  [7, 8, 9,4],
+                  [1,2,3,4]]
     array_axis_summation(user_array)
 
 
