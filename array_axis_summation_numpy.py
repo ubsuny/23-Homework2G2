@@ -1,5 +1,5 @@
+import timeit
 import numpy as np
-
 def array_axis_summation(array):
     """
     Demonstrates array axis summations using the Einstein summation convention.
@@ -27,11 +27,17 @@ def array_axis_summation(array):
     print("\nSum Along Columns (Axis 1) using Einstein summation:")
     print(column_sums)
 
-# Example usage:
-# This code block will only execute when the script is run directly,
-# not when it's imported as a module into another script.
-if __name__ == "__main__":
-    user_array = np.array([[1, 2, 3],
-                           [4, 5, 6],
-                           [7, 8, 9]])
+
+# Define the code block as a function
+def timed_code():
+    user_array = [[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]]
     array_axis_summation(user_array)
+
+# Measure the execution time with timeit
+elapsed_time = timeit.timeit(timed_code, number=1)
+elapsed_time_micro = elapsed_time * 1e6
+
+# Print the elapsed time in seconds
+print(f"Elapsed Time: {elapsed_time_micro:.6f} microseconds")
