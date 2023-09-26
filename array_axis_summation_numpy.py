@@ -14,9 +14,11 @@ def array_axis_summation(array):
 
     # Sum along rows (axis 0) using Einstein summation convention
     row_sums = np.einsum('ij->j', array)
+    %time np.einsum('ij->j', array)    #this function will calculate and print the consumed time
 
     # Sum along columns (axis 1) using Einstein summation convention
     column_sums = np.einsum('ij->i', array)
+    %time np.einsum('ij->i', array)    #this function will calculate and print the consumed time
 
     print("Original Array:")
     print(array)
