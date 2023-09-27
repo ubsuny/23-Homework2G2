@@ -1,3 +1,5 @@
+import timeit
+
 def array_axis_summation(array):
     """
     Demonstrates array axis summations without using NumPy.
