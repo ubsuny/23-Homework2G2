@@ -141,9 +141,10 @@ Which are implemented as
 
 ## Results
 
-While the execution time does depend on the machine on which the code is being run, using numpy's built in einsum function is significantly faster than manually applying the algorithm.
-This is likely due to the fact that einsum is a part of the numpy library, which is largely written in C. C tends to be much faster at handling calculations than Python,
-so numpy algorithms can take advantage of this to offer optimized calculations.
+While the execution time does depend on the machine on which the code is being run, using numpy's built in einsum function is significantly faster than manually applying the algorithm. This discrepancy only increases for the size of the array being operated upon. For a smaller matrix the runtimes are comperable, but as the size increases the execution time using numpy can become several orders of magnitude smaller. (See the image below which shows measured run times for 10x10, 100x100, and 10000x10000 matrices.)
+![image](https://github.com/WildJimmy/23-Homework2G2-James/assets/94491866/0f318225-d6ba-407b-8c52-1e2181ba219f)
+
+This is likely due to the fact that einsum is a part of the numpy library, which is largely written in C. C tends to be much faster at handling calculations than Python, so numpy algorithms can take advantage of this to offer optimized calculations.
 
 ### Sources
 https://mathworld.wolfram.com/EinsteinSummation.html
