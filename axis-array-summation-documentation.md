@@ -11,7 +11,8 @@ $$A_i B_{i,j} = \sum_{i} A_i B_{i,j}$$
 Which effectively just eliminates the summation sign. 
 
 This notation can be used to simplify tensor operations for any number of dimensions. For example
-$$A_{i,j} B_{i,j} = \sum{i} \sum{j} A_{i,j} B_{i,j} = **A** \dot **B**$$
+
+$$A_{i,j} B_{i,j} = \sum_{i} \sum_{j} A_{i,j} B_{i,j} = \vec{A} \cdot \vec{B}$$
 
 ## Axis Array Summation
 
